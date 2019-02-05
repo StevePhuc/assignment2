@@ -44,6 +44,7 @@
 
 .content-top{
     display: flex; 
+    flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
 }
@@ -53,94 +54,111 @@
 }
 
 
-/* ************************** Content Recent   *************************/
+/* ************************** Content Column   *************************/
 
-
-.content-recent .column-wrap{
-    display: flex;
-    justify-content: space-between;
-}
-.content-recent .column-wrap > *{
-    flex:0 1 30%;
-}
-
-
-/* ************************** testi-develop   *************************/
-.testi-develop{
-    display: flex;
-    justify-content: space-between;
-}
-
-.testimonials{
-    flex:0 1 65%;
-}
-
-.development{
-    flex:0 1 30%;
-}
-
-
-/* ************************** testimonials  *************************/
-.testimonials .column-wrap{
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-}
-
-.testimonials .column-wrap> *{
-    flex:0 1 46%;
-    min-height: 150px;
-}
-
-
-
-/* ************************** development  *************************/
-
-.development .column-wrap{
+.content-recent{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-recent >* {
+    flex: 0 1 30%;
+}
+
+
+
+/* ************************** title   *************************/
+
+.content-recent .title{
+    flex:0 1 100%;
+}
+
+
+.content-recent .title2{
+     flex:0 1 65%;
  }
 
-.development .tab-header{
+ .content-recent .title3{
+    flex:0 1 30%;
+}
+ 
+/* ************************** testimonials  *************************/
+
+
+.testimonials{
     display: flex;
+    flex-wrap: wrap; 
+    align-content: space-between;
 }
 
-.development .tabcontent-text{
-    display: flex;
-    height: 200px; 
-}
-.development .tabcontent-text{
-    flex:1;
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    align-content: flex-start; 
+.testimonials> *{
+    flex: 1 1 100%; 
 }
 
-.development .tabcontent-text > * {
-  flex:1 1 100%;
+.testi{
+    padding: 20px 40px 0 20px; 
+}
+ 
+  
+
+/* ************************** development  *************************/
+ 
+ 
+
+.development{
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
 }
 
+.tab-header {
+    flex: 0 1 50px; 
+    display: flex;     
+}
+
+.tab-header > * {
+    display: flex;
+    align-items: center;
+}
+
+.tab-content {
+    flex: 1 1 auto;
+    display: flex; 
+    flex-direction: column;
+}
+
+  
+.tab-button{
+    text-align: right;
+}
+
+.tab-button a{
+    margin: 0 10px 20px 0;
+}
+  
 
 .content-bottom{
-    display: flex;
+    display: flex; 
+    align-items: center;
 }
 
-.content-bottom h1{
+.content-bottom h2{
     flex:1;
 }
-
+ 
 
 
 /* ************************** Footer   *************************/
 
 .footer-column{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .footer-column > *{
-    flex: 0 1 24%;
+    flex: 0 1 22%;
 }
 
 .footer-bottom {
@@ -150,3 +168,4 @@
 .footer-bottom h4 {
     flex:1;
 }
+
