@@ -1,8 +1,38 @@
 
 /* ************************** Header   *************************/
 
+.header-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.header-top-image {
+    flex:0 1 50%;
+    
+}
 
+.header-top-text{
+    flex:0 1 45%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    
+}
+
+.header-top-text >*{
+    margin: 20px 10% 20px 0;
+}
+
+.header-bottom-text{ 
+    display: flex;
+    align-items: center;
+
+}
+
+.header-bottom-text h2{
+    flex:1;
+} 
 
 
 
@@ -10,6 +40,113 @@
 
 
 
+/* ************************** Content Top   *************************/
+
+.content-top{
+    display: flex; 
+    justify-content: space-around;
+    text-align: center;
+}
+
+.content-top > *{
+    flex:0 1 22%;
+}
+
+
+/* ************************** Content Recent   *************************/
+
+
+.content-recent .column-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.content-recent .column-wrap > *{
+    flex:0 1 30%;
+}
+
+
+/* ************************** testi-develop   *************************/
+.testi-develop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials{
+    flex:0 1 65%;
+}
+
+.development{
+    flex:0 1 30%;
+}
+
+
+/* ************************** testimonials  *************************/
+.testimonials .column-wrap{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.testimonials .column-wrap> *{
+    flex:0 1 46%;
+    min-height: 150px;
+}
+
+
+
+/* ************************** development  *************************/
+
+.development .column-wrap{
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+.development .tab-header{
+    display: flex;
+}
+
+.development .tabcontent-text{
+    display: flex;
+    height: 200px; 
+}
+.development .tabcontent-text{
+    flex:1;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-content: flex-start; 
+}
+
+.development .tabcontent-text > * {
+  flex:1 1 100%;
+}
+
+
+.content-bottom{
+    display: flex;
+}
+
+.content-bottom h1{
+    flex:1;
+}
+
 
 
 /* ************************** Footer   *************************/
+
+.footer-column{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column > *{
+    flex: 0 1 24%;
+}
+
+.footer-bottom {
+    display: flex;
+}
+
+.footer-bottom h4 {
+    flex:1;
+}
