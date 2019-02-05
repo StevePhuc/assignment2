@@ -5,3 +5,54 @@
     border: 0;
 } 
 
+:root{
+    --blue: rgb(33, 63, 199);
+    --black:  rgb(53, 49, 49);
+    --white: rgb(245, 245, 245);
+
+}
+
+body{
+    color:#272727;
+    background var(--white);
+}
+
+header,footer{
+    background: var(--black);
+    color: var(--white);
+}
+
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+h1,h2,h3,h4,a{
+    text-transform: uppercase;
+}
+
+h3{
+    text-transform: capitalize;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 6px;
+}
+
+.button-white{
+    background: var(--white);
+    color: var(--black);
+}
+
+.button-blue{
+    background: var(--blue);
+    color: var(--white);
+}
+
+
+
+
