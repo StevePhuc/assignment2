@@ -50,7 +50,7 @@
 }
 
 .content-top > *{
-    flex:0 1 22%;
+    flex:0 1 20%;
 }
 
 
@@ -63,7 +63,7 @@
 }
 
 .content-recent >* {
-    flex: 0 1 30%;
+    flex: 0 1 32%;
 }
 
 
@@ -76,11 +76,11 @@
 
 
 .content-recent .title2{
-     flex:0 1 65%;
+     flex:0 1 66%;
  }
 
  .content-recent .title3{
-    flex:0 1 30%;
+    flex:0 1 32%;
 }
  
 /* ************************** testimonials  *************************/
@@ -96,9 +96,7 @@
     flex: 1 1 100%; 
 }
 
-.testi{
-    padding: 20px 40px 0 20px; 
-}
+
  
   
 
@@ -158,14 +156,36 @@
 }
 
 .footer-column > *{
-    flex: 0 1 22%;
+    flex: 0 1 21%;
 }
 
 .footer-bottom {
     display: flex;
+    
 }
 
-.footer-bottom h4 {
+.footer-bottom > :first-child{
     flex:1;
+}
+
+.footer-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 125px;
+}
+
+.footer-link{
+    display:flex;
+    align-content: center;
+}
+
+.footer-link > *{
+    margin-left: 20px;
+}
+
+.gallery__item{
+    flex: 0 1 60px;
 }
 

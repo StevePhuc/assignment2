@@ -9,7 +9,7 @@
     --blue: #4691D5;
     --black:  #404040;
     --white: rgb(255, 255, 255);
-    --grey:#838383;
+    --grey:grey;
 
 }
 
@@ -35,31 +35,41 @@ header,footer{
 }
 
 
+html {
+  font-size:16px;
+}
+
 h1,h2,h3,h4,a{
     text-transform: uppercase;
 }
 
 h1{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 1.2;
+    font-weight: 500;
+    color: var(--grey);
 }
 
 h2{
     font-size: 1.5rem;
+    font-weight: 200;
 }
 
 h3{
-    font-size: 1.4rem;
-    
+    font-size: 1.1rem;
+    margin: 10px 0;
+    font-weight: 400;
 }
 
 h4{
-    font-size: 1.1rem;
+    margin: 1px 0;
+    font-size: 1rem;
     text-transform: capitalize;
 }
 
-html {
-  font-size:16px;
+ 
+b{
+    color: var(--white);
 }
 
 img {max-width:100%;}
@@ -106,10 +116,16 @@ header:before{
     padding: 20px 0;
 }
 
+.header-top-text p{
+    color: var(--grey);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
 .header-bottom-text, .content-bottom{ 
     background: var(--blue);
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px 30px 20px 60px;
     color:white; 
     position:relative; 
 }
@@ -121,7 +137,7 @@ header:before{
     height:0;
     border-top:50px solid var(--blue);
     border-right:50px solid transparent;
-    bottom: -50px;
+    top: 100%;
     left: 0;
 }
 
@@ -130,13 +146,32 @@ header:before{
 section{
     margin: 50px 0;
 }
+ 
+.icon{   
+    background: var(--black);
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    line-height: 90px;
+    border-radius: 50%;
+
+}
+
+.fas{ 
+    font-size: 25px;
+    color: var(--white);
+}
+
+.content-top b{
+    color: var(--black);
+}
 
 .section_title{
     background: url(../assets/Border-BG.jpg);
     background-size: 172px 100%;
     text-align: center; 
     color: var(--grey);
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 .section_title h2{
@@ -144,6 +179,7 @@ section{
     display: inline-block;
     padding: 0 30px;
     font-size: 1rem;
+    font-weight: 600;
 }
 
 .title2,.title3{
@@ -155,18 +191,57 @@ section{
     position:relative; 
 }
 
+.work__detail{ 
+    margin: 10px 0 50px 20px ;
+}
+
+.testi{
+    padding: 20px 40px 40px 20px; 
+}
  
-.work:after,.testi:after  { 
+.work:after,.testi:after,.top:hover:after  { 
     content:'';
     position:absolute;
     width:0;
     height:0;
-    border-top:30px solid var(--white);
-    border-right:30px solid transparent;
-    bottom: -30px;
+    border-top:40px solid var(--white);
+    border-right:40px solid transparent;
+    top:100%;
     left: 0;
 }
 
+.top {
+    padding: 20px;
+    position: relative; 
+}
+ 
+
+.top:hover{
+    background: var(--white);
+    cursor: pointer;
+}
+
+.top:hover .button{
+     display: none;
+}
+
+ 
+ 
+
+.tab{
+    padding: 0 20px;
+    background:rgb(233, 233, 233); 
+}
+
+.tab-active{
+    margin-right: 10px;
+    box-shadow: 10px 10px 50px 0 grey;
+} 
+
+.tab-content{
+    padding: 20px 0 0 30px;
+   
+}
 
 .tab-active,.tab-content,.tab-button {
     background: var(--white);
@@ -179,17 +254,83 @@ section{
 
 footer {
     color: var(--grey);
-    padding-top: 80px;
+    padding: 80px 0 40px 0;
+}
+
+.footer-column3 ul{
+    padding: 0;
+
+}
+
+
+.footer-column3 li{
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 2px solid var(--grey);
+}
+ 
+
+.footer-column3 li:last-child{
+     border-bottom: none;
 }
 
 footer h4{
     color: var(--white);
+    margin: 10px 0;
+    text-transform: uppercase;
 }
 
-.footer-bottom{
-    padding: 30px 0;   
+
+ 
+
+.gallery__item{
+    background: black;
+    height: 60px; 
 }
+
+
+.copyright {
+    padding: 30px 0; 
+    background: #272727;
+    color:var(--grey);
+}
+
+.footer-link i{
+    font-size: 2.5rem;
+    color:black;
+}
+
+.footer-link i:hover{
+    color: var(--white);
+}
+
+.footer-link  a:hover{
+    position: relative;
+  }
+.footer-link  a[title]:hover:after {
+    content: attr(title);
+    padding: 4px 8px;
+    position: absolute;
+    left: 0;
+    bottom: 140%;
+    z-index: 20px;
+    background:var(--grey);
+    color: var(--white);
+  }
+
+.footer-link  a:hover:before {
+    content: "";
+    width:0;
+    height:0;
+    border-top:15px solid var(--grey);
+    border-right:15px solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: 110%;
+    z-index: 20px;
+  }
 
 .gotoTop{
     display: none;
 }
+
