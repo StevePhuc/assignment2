@@ -27,7 +27,7 @@
 .header-bottom-text{ 
     display: flex;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 
 .header-bottom-text h2{
@@ -139,6 +139,7 @@
 .content-bottom{
     display: flex; 
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .content-bottom h2{
@@ -161,11 +162,16 @@
 
 .footer-bottom {
     display: flex;
+    flex-wrap: wrap;
     
 }
 
 .footer-bottom > :first-child{
-    flex:1;
+    flex:60%;
+}
+
+.footer-bottom > :last-child{
+    flex:30%;
 }
 
 .footer-gallery{
@@ -178,14 +184,104 @@
 
 .footer-link{
     display:flex;
-    align-content: center;
+    text-align: right;
+  
 }
 
 .footer-link > *{
-    margin-left: 20px;
+    flex: 1;
 }
 
 .gallery__item{
     flex: 0 1 60px;
 }
+ 
 
+@media only screen and (max-width: 1200px) {
+
+
+    .header-top-image {
+        flex:0 1 90%;
+        
+    }
+
+    .header-top-text {
+        flex:0 1 90%;
+        
+    }
+    .header-bottom-text,.content-bottom{
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .header-bottom-text > :first-child,
+    .content-bottom > :first-child {
+        flex:1 1 100%;
+        padding:10px 0 20px 0;
+        font-size: 1.2rem;
+    } 
+
+    .content-top > *{
+        flex:0 1 90%;
+    }
+
+    .content-recent{ 
+        justify-content: center;
+    }
+
+    .content-recent >* {
+        flex: 0 1 60%;
+        text-align: center;
+    }
+
+    .content-recent .title2,  .content-recent .title3{
+       flex:0 1 90%;
+   }
+   .content-recent .title3,.development{
+    order:1;
+}
+
+    .work, {
+        flex:0 1 90%;
+        margin-bottom: 50px;
+    }
+
+    .testi{ 
+        margin-bottom: 50px;
+    }
+
+
+    .footer-column,.footer-bottom{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer-column > *{
+        flex: 0 1 100%;
+    }
+
+
+    .footer-bottom > *{
+        flex: 1 1 100%;
+    }
+
+    .footer-link{  
+        justify-content: space-between;
+    }
+
+    .footer-link > *{ 
+        flex: 1;
+    }
+ 
+
+    
+  } 
+
+  @media only screen and (max-width: 600px) {
+
+
+    .content-recent >* {
+        flex: 0 1 90%;
+    }
+}

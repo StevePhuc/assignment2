@@ -331,6 +331,23 @@ footer h4{
   }
 
 .gotoTop{
-    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background: var(--black); 
+    padding: 8px 10px;
+}
+.gotoTop i{
+    color: var(--grey);
+    font-size: 1.6rem;
 }
 
+
+@media only screen and (max-width: 1200px) {
+    
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    
+  }
