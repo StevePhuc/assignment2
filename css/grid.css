@@ -1,0 +1,143 @@
+
+/* ************************** Header   *************************/
+
+.header-top{
+    display: grid;
+    grid-template-columns: 50% 45%;
+    justify-content: center;
+}
+
+.header-top-text{
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    align-items: center;
+}
+
+.header-top-text .button{
+    justify-self: start; 
+}
+
+.header-bottom-text,.content-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+
+/* ************************** Content  **********************/
+
+
+
+/* ************************** Content top   *************************/
+.content-top{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-between;
+}
+
+
+/* ************************** Content Recent   *************************/
+.content-recent{
+    display: grid;
+    grid-template-rows:repeat(4, auto);
+    grid-template-columns: repeat(3,32%);
+    justify-content: space-between;
+    grid-template-areas: 
+       "title1 title1 title1"
+       "work1 work2 work3"
+       "title2 title2 title3"
+       "testimonials1 testimonials2 development";
+}
+
+.title1{
+    grid-area: title1;
+}
+
+.title2{
+    grid-area: title2;
+}
+
+.title3{
+    grid-area: title3;
+}
+
+.work1{
+    grid-area: work1;
+}
+.work2{
+    grid-area: work2;
+}
+.work3{
+    grid-area: work3;
+}
+
+.testimonials{
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: space-between;
+}
+
+
+.testimonials1{
+    grid-area: testimonials1;
+}
+.testimonials2{
+    grid-area: testimonials2;
+}
+.development{
+    grid-area: development;
+    display: grid;
+    grid-template-rows: 40px auto 80px;
+    min-height: 400px;
+}
+
+.tab-header{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50px;
+    justify-content: start;
+ 
+}
+.tab-header > * { 
+    display: grid;
+    align-content: center;
+}
+
+.tab-button{
+    text-align: right;
+}
+
+.tab-button a{
+    margin: 0 10px 20px 0;
+}
+  
+
+/* ************************** footer  *************************/
+
+.footer-column{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-between;
+    grid-gap: 20px;
+}
+
+.footer-gallery{
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto auto;
+    grid-gap: 2px;
+    
+}
+
+.footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto ; 
+}
+ 
+.footer-link{
+    display: grid; 
+    grid-auto-flow:column;
+    grid-column-gap: 20px;  
+
+}
+
+
