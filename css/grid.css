@@ -141,3 +141,107 @@
 }
 
 
+@media only screen and (max-width: 1200px) {
+    .header-top{ 
+        grid-template-columns: 90%; 
+        grid-template-rows: auto auto; 
+    }
+
+    .header-top-image img{
+        height: 100%;
+        /* width: 100%; */
+    }
+
+    .header-top-text {
+        grid-template-rows: 100px 100px 30px;
+        align-content: flex-start;
+    }
+
+    .content-top{ 
+        grid-template-columns: 40% 40% ; 
+        justify-content: center;
+    }
+
+     .content-recent{
+        display: grid; 
+        grid-template-columns:60% ;
+        justify-content: center; 
+        grid-template-areas: 
+           "title1"
+           "work1" "work2" "work3"
+           "title2 "
+           "testimonials1" " testimonials2 " "title3""development";
+    } 
+
+
+    .testimonials{
+        display: grid;
+        grid-template-rows: auto;
+        grid-row-gap: 60px;
+    }
+
+    .testimonials1{
+        margin-bottom: 60px;
+    }
+    
+
+    .development{  
+        min-height: 0;
+    }
+
+    .footer-column{ 
+        grid-template-columns: 90%;
+        justify-content: center; 
+    }
+
+    .footer-gallery{  
+        justify-content: start;
+    }
+    
+    .footer-bottom { 
+        grid-template-columns:  90%;
+        justify-content: center; 
+    }
+
+    .footer-link{ 
+        grid-column-gap: 10px;  
+        justify-content: start;
+    
+    }
+
+}
+
+
+@media only screen and (max-width: 650px) {
+   
+    .header-top{ 
+    
+        grid-template-rows: 50% auto; 
+    }
+
+ 
+    .header-bottom-text,.content-bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 40px;
+        grid-gap: 10px;
+        justify-items: start;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .content-top{ 
+        grid-template-columns: 90%; 
+      
+    }
+
+    .content-recent{ 
+        grid-template-columns:90% ;
+       
+    } 
+    
+      
+
+
+}
+ 

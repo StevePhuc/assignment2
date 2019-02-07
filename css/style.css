@@ -117,10 +117,12 @@ header{
 .header-bottom-text, .content-bottom{ 
     background: var(--blue);
     width: 100%;
-    padding: 20px 30px 20px 60px;
+    padding: 20px 20px 20px 40px;
     color:white; 
     position:relative; 
+
 }
+ 
 
 .header-bottom-text:after, .content-bottom:after{ 
     content:'';
@@ -184,7 +186,7 @@ section{
 }
 
 .work__detail{ 
-    margin: 10px 0 50px 20px ;
+    margin: 10px 5px 50px 20px ;
 }
 
 .testi{
@@ -232,7 +234,7 @@ section{
 } 
 
 .tab-content{
-    padding: 20px 0 0 30px;
+    padding: 20px 5px 0 30px;
    
 }
 
@@ -305,7 +307,7 @@ footer h4{
     content: attr(title);
     padding: 4px 8px;
     position: absolute;
-    left:  0%;
+    left:  50%;
     bottom: 140%;
     z-index: 20px;
     background:var(--grey);
@@ -319,7 +321,7 @@ footer h4{
     border-top:15px solid var(--grey);
     border-right:15px solid transparent;
     position: absolute;
-    left: 0%;
+    left: 50%;
     bottom: 110%;
     z-index: 20px;
   }
@@ -338,6 +340,15 @@ footer h4{
 
 
 @media only screen and (max-width: 1200px) {
+    
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+  }
+
+  @media only screen and (max-width: 650px) {
     
     .container{
         width: 100%;
