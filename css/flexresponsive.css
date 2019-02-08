@@ -65,7 +65,7 @@
 }
 
 .content-recent > * {
-  flex: 0 1 300px;
+  flex: 0 1 380px;
   margin-bottom: 50px;
 }
 
@@ -179,7 +179,7 @@
 }
 
 .gallery__item {
-  /* flex: 0 1 60px; */
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -196,6 +196,13 @@
   .content-recent {
     justify-content: center;
   }
+
 }
 
+@media only screen and (max-width: 800px) {
+
+  .work,.testimonials{
+    margin-right: 0;
+  }
+}
  
