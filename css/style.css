@@ -190,7 +190,11 @@ section{
 }
 
 .testi{
-    padding: 20px 40px 40px 20px; 
+    padding: 20px 40px 40px 20px;
+}
+
+.testi1,.testi3{
+    margin-bottom: 50px;
 }
  
 .work:after,.testi:after,.top:hover:after  { 
@@ -348,11 +352,11 @@ footer h4{
     
   }
 
-  @media only screen and (max-width: 650px) {
+  /* @media only screen and (max-width: 650px) {
     
     .container{
         width: 100%;
         margin: 0;
     }
-    
+     */
   }
